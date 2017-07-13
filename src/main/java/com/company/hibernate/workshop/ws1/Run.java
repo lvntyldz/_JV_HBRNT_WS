@@ -19,7 +19,7 @@ public class Run {
         person.setName("ali");
         person.setLastname("veli");
 
-        session.save(person);//Insert 
+        session.save(person);//Insert
         session.getTransaction().commit();
 //        --------------- hibernate -----------
 
