@@ -1,0 +1,1 @@
+CREATE SCHEMA `hibernate_test` DEFAULT CHARACTER SET utf8 ;
