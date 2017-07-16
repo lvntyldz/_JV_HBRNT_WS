@@ -1,4 +1,4 @@
-**Açıklamalar : **
+#Açıklamalar : #
 
 Hibernate bir JPA implementasyonudur.
 Java objelerini DB deki tablolara dönüştürür
