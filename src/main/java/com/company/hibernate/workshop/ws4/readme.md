@@ -9,15 +9,15 @@
 
     Her üç SQL veri tipini oluşturmak için Java objesinde  java.util.Date veri tipi kullanılır.
 
-    @Temporal(value = TemporalType.DATE)
-    private java.util.Date createDate;
+    @Temporal(value = TemporalType.DATE)<br>
+    private java.util.Date createDate; <br><br>
 
-    @Temporal(value = TemporalType.TIMESTAMP)
-    private java.util.Date createDate2;
+    @Temporal(value = TemporalType.TIMESTAMP)<br>
+    private java.util.Date createDate2;<br><br>
 
 
-    @Temporal(value = TemporalType.TIME)
-    private java.util.Date createTime;
+    @Temporal(value = TemporalType.TIME) <br>
+    private java.util.Date createTime;<br><br>
 
 
    Temporal value   =  TemporalType.TIMESTAMP ise tarih ve saat bilgisi aynı anda içerir
