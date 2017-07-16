@@ -13,6 +13,7 @@
         <property name="hbm2ddl.auto">update</property>
         <mapping class="com.company.hibernate.workshop.entities.Product1" ></mapping>
         <mapping class="com.company.hibernate.workshop.entities.Product2" ></mapping>
+        <mapping class="com.company.hibernate.workshop.entities.Product3" ></mapping>
 
     </session-factory>
 </hibernate-configuration>
