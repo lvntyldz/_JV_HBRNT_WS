@@ -3,21 +3,21 @@ package com.company.hibernate.workshop.entities;
 import javax.persistence.*;
 
 @Entity
-@SecondaryTable(name = "PRODUCT_CATEGORY3",pkJoinColumns = {
-    @PrimaryKeyJoinColumn(name = "PRODUCT_ID", referencedColumnName = "ID")
+@SecondaryTable(name = "PRODUCT_CATEGORY3", pkJoinColumns = {
+        @PrimaryKeyJoinColumn(name = "PRODUCT_ID", referencedColumnName = "ID")
 })
 @Table(name = "PRODUCT3")
 public class Product3 {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name="ID")
+    @Column(name = "ID")
     private int id;
 
-    @Column(name="NAME")
+    @Column(name = "NAME")
     private String name;
 
-    @Column(name="COUNT")
+    @Column(name = "COUNT")
     private int count;
 
     @Column(table = "PRODUCT_CATEGORY3")

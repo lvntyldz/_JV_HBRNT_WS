@@ -10,10 +10,12 @@
         <property name="hibernate.connection.password">1234567890</property>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
         <property name="show_sql">true</property>
-        <property name="hbm2ddl.auto">update</property>
-        <mapping class="com.company.hibernate.workshop.entities.Product1" ></mapping>
-        <mapping class="com.company.hibernate.workshop.entities.Product2" ></mapping>
-        <mapping class="com.company.hibernate.workshop.entities.Product3" ></mapping>
+        <!--<property name="hbm2ddl.auto">update</property>-->
+        <property name="hbm2ddl.auto">create-drop</property>
+        <mapping class="com.company.hibernate.workshop.entities.Product1"></mapping>
+        <mapping class="com.company.hibernate.workshop.entities.Product2"></mapping>
+        <mapping class="com.company.hibernate.workshop.entities.Product3"></mapping>
+        <mapping class="com.company.hibernate.workshop.entities.Product4"></mapping>
 
     </session-factory>
 </hibernate-configuration>
