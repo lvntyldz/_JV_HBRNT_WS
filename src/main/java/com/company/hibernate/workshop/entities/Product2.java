@@ -3,8 +3,8 @@ package com.company.hibernate.workshop.entities;
 import javax.persistence.*;
 
 @Entity
-@SecondaryTable(name="PRODUCT_CATEGORY")
-public class Product {
+@SecondaryTable(name="PRODUCT_CATEGORY2")
+public class Product2 {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -12,7 +12,9 @@ public class Product {
 
     private String name;
 
-    @Column(table = "PRODUCT_CATEGORY")
+    private int count;
+
+    @Column(table = "PRODUCT_CATEGORY2")
     private String category;
 
     public int getId() {
@@ -31,11 +33,29 @@ public class Product {
         this.name = name;
     }
 
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
+
     public String getCategory() {
         return category;
     }
 
     public void setCategory(String category) {
         this.category = category;
+    }
+
+    @Override
+    public String toString() {
+        return "Product2{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", count=" + count +
+                ", category='" + category + '\'' +
+                '}';
     }
 }

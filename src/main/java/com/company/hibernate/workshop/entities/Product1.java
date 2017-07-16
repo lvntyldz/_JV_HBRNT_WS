@@ -8,15 +8,13 @@ import java.io.Serializable;
 
 
 @Entity
-public class Person implements Serializable {
+public class Product1 implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
-
     private String name;
-    private String lastname;
-    private int age;
+    private int count;
 
     public int getId() {
         return id;
@@ -34,19 +32,20 @@ public class Person implements Serializable {
         this.name = name;
     }
 
-    public String getLastname() {
-        return lastname;
+    public int getCount() {
+        return count;
     }
 
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
+    public void setCount(int count) {
+        this.count = count;
     }
 
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
+    @Override
+    public String toString() {
+        return "Product1{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", count=" + count +
+                '}';
     }
 }

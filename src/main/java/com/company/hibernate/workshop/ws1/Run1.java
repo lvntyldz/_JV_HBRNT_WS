@@ -1,10 +1,10 @@
 package com.company.hibernate.workshop.ws1;
 
-import com.company.hibernate.workshop.entities.Person;
+import com.company.hibernate.workshop.entities.Product1;
 import com.company.hibernate.workshop.util.HibernateUtil;
 import org.hibernate.Session;
 
-public class Run {
+public class Run1 {
 
     public static void main(String[] args) {
 
@@ -13,13 +13,12 @@ public class Run {
         Session session = HibernateUtil.getSession().openSession();
         session.beginTransaction();
 
-        Person person = new Person();
+        Product1 product1 = new Product1();
 
-        person.setAge(33);
-        person.setName("ali");
-        person.setLastname("veli");
+        product1.setCount(3);
+        product1.setName("Elma");
+        session.save(product1);//Insert
 
-        session.save(person);//Insert
         session.getTransaction().commit();
 //        --------------- hibernate -----------
 
