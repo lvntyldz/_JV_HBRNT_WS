@@ -19,6 +19,8 @@
         <mapping class="com.company.hibernate.workshop.entities.Product4"></mapping>
         <mapping class="com.company.hibernate.workshop.entities.Product5"></mapping>
         <mapping class="com.company.hibernate.workshop.entities.Category5"></mapping>
+        <mapping class="com.company.hibernate.workshop.entities.Product6"></mapping>
+        <mapping class="com.company.hibernate.workshop.entities.Category6"></mapping>
 
     </session-factory>
 </hibernate-configuration>
